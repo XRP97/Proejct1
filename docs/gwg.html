@@ -11,7 +11,7 @@
     <title>GitFlow With GitHub</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="docs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
@@ -63,7 +63,7 @@
                 <li>+ <a href="https://github.com">GitHub</a></li>
             </ul>
             <h5 id="the-poster">The Poster</h5>
-            <P><i><img src="images/gwg1.png" alt=""></i></P>
+            <P><i><img src="../images/gwg1.png" alt=""></i></P>
             <p>Created in Inkscape.</p>
             <p><span class="label label-info">The key points are:</span></p>
             <ul>
@@ -73,23 +73,23 @@
                 <li>Don’t accept your own pull requests!</li>
             </ul>
             <h5 id="1-cloning-a-repo">1. Cloning A Repo:</h5>
-            <P><i><img src="images/gwg2.png" alt=""></i></P>
+            <P><i><img src="../images/gwg2.png" alt=""></i></P>
             <p><span class="label label-important">Please remember:</span></p>
             <ul>
                 <li>Do not fork the repo on GitHub - clone the master repo directly.</li>
             </ul>
             <h5 id="2-initialise-the-hubflow-tools">2. Initialise The HubFlow Tools:</h5>
             <p>The HubFlow tools need to be initialised before they can be used:</p>
-            <P><i><img src="images/gwg3.png" alt=""></i></P>
+            <P><i><img src="../images/gwg3.png" alt=""></i></P>
             <p><span class="label label-important">Please remember:</span></p>
             <ul>
                 <li>You have to do this every time you clone a repo.</li>
             </ul>
             <h5 id="3-create-a-feature-branch">3. Create A Feature Branch:</h5>
             <p>If you are creating a new feature branch, do this:</p>
-            <P><i><img src="images/gwg4.png" alt=""></i></P>
+            <P><i><img src="../images/gwg4.png" alt=""></i></P>
             <p>If you are starting to work on an existing feature branch, do this:</p>
-            <P><i><img src="images/gwg5.png" alt=""></i></P>
+            <P><i><img src="../images/gwg5.png" alt=""></i></P>
             <p><span class="label label-important">Please remember:</span></p>
             <ul>
                 <li>All new work (new features, non-emergency bug fixes) <strong>must</strong> be done in a new feature
@@ -102,39 +102,39 @@
             </ul>
             <h5 id="4-publish-the-feature-branch-on-github">4. Publish The Feature Branch On GitHub:</h5>
             <p>Push your feature branch back to GitHub as you make progress on your changes:</p>
-            <P><i><img src="images/gwg6.png" alt=""></i></P>
+            <P><i><img src="../images/gwg6.png" alt=""></i></P>
             <h5 id="5-keep-up-to-date">5. Keep Up To Date:</h5>
             <p>You’ll need to bring down completed features &amp; hotfixes from other developers, and merge them into
                 your feature branch regularly. (Once a day, first thing in the morning, is a good rule of thumb).</p>
-            <P><i><img src="images/gwg7.png" alt=""></i></P>
+            <P><i><img src="../images/gwg7.png" alt=""></i></P>
             <h5 id="6-collaborate-with-others">6. Collaborate With Others:</h5>
-            <P><i><img src="images/gwg8.png" alt=""></i></P>
+            <P><i><img src="../images/gwg8.png" alt=""></i></P>
             <p>Pull your colleague’s changes back to your local clone:</p>
-            <P><i><img src="images/gwg9.png" alt=""></i></P>
+            <P><i><img src="../images/gwg9.png" alt=""></i></P>
             <h5 id="7-merge-your-feature-into-develop-branch">7. Merge Your Feature Into Develop Branch:</h5>
-            <P><i><img src="images/gwg10.png" alt=""></i></P>
+            <P><i><img src="../images/gwg10.png" alt=""></i></P>
             <p>Then, use the GitHub website to create a pull request to ##reponame##/develop branch from
                 ##reponame##/feature/##feature-name##.</p>
-            <P><i><img src="images/gwg11.png" alt=""></i></P>
-            <P><i><img src="images/gwg12.png" alt=""></i></P>
-            <P><i><img src="images/gwg13.png" alt=""></i></P>
-            <P><i><img src="images/gwg14.png" alt=""></i></P>
-            <P><i><img src="images/gwg15.png" alt=""></i></P>
+            <P><i><img src="../images/gwg11.png" alt=""></i></P>
+            <P><i><img src="../images/gwg12.png" alt=""></i></P>
+            <P><i><img src="../images/gwg13.png" alt=""></i></P>
+            <P><i><img src="../images/gwg14.png" alt=""></i></P>
+            <P><i><img src="../images/gwg15.png" alt=""></i></P>
             <p>Ask a colleague to review your pull-request; don’t accept it yourself unless you have to. Once the pull
                 request has been accepted, close your feature using the HubFlow tools:</p>
-            <P><i><img src="images/gwg16.png" alt=""></i></P>
+            <P><i><img src="../images/gwg16.png" alt=""></i></P>
             <h5 id="8-creating-releases">8. Creating Releases:</h5>
             <p>When you have enough completed features, create a release branch:</p>
-            <P><i><img src="images/gwg17.png" alt=""></i></P>
+            <P><i><img src="../images/gwg17.png" alt=""></i></P>
             <p>Release branches are given version numbers for name. For example:</p>
-            <P><i><img src="images/gwg18.png" alt=""></i></P>
+            <P><i><img src="../images/gwg18.png" alt=""></i></P>
             <p>creates the branch <strong>release/2.6.0</strong>.</p>
             <p>Once you’ve created the release branch, <strong>remember to update the version number in your
                 code</strong> (in the pom.xml, Makefile, build.xml or wherever it is stored).</p>
             <p>Build the code, deploy it into test environments, find bugs. Fix the bugs directly inside the release
                 branch. Keep building, deploying, debugging, fixing until you’re happy that the release is ready.</p>
             <p>When you’re ready to tag the release and merge it back into master and develop branches, do this:</p>
-            <P><i><img src="images/gwg19.png" alt=""></i></P>
+            <P><i><img src="../images/gwg19.png" alt=""></i></P>
             <p>This closes the release branch and creates a tag called <strong>##version-number##</strong> against the
                 <strong>master branch</strong>.</p>
             <h5 id="9-creating-hotfixes">9. Creating Hotfixes:</h5>
@@ -143,7 +143,7 @@
                 Use hotfixes when you want to make and release an urgent change to your latest released code, and you
                 don’t want the changes currently in <strong>develop</strong> to ship yet.</p>
             <p>To create a new hotfix:</p>
-            <P><i><img src="images/gwg20.png" alt=""></i></P>
+            <P><i><img src="../images/gwg20.png" alt=""></i></P>
             <p>This creates a new branch called <strong>hotfix/##version-number##</strong>, off of the latest <strong>master</strong>
                 branch.</p>
             <p>Once you’ve created the hotfix branch, <strong>remember to update the version number in your
@@ -153,7 +153,7 @@
                 that you can use the <em>git merge</em> command if you need to merge changes from a feature branch into
                 the hotfix that you are preparing.</p>
             <p>When you’re ready to tag the hotfix and merge it back into master and develop branches, do this:</p>
-            <P><i><img src="images/gwg21.png" alt=""></i></P>
+            <P><i><img src="../images/gwg21.png" alt=""></i></P>
             <p>This closes the hotfix branch and creates a tag called <strong>##version-number##</strong> against the
                 <strong>master branch</strong>.</p>
 
@@ -175,7 +175,7 @@
                     <p>For all other inquiries, please view my LinkedIn Page or contact us by below number:
                         <br> +1 609 481-7907 (US/Intl)<br></p>
                     <div class="author">
-                        <i><img src="images/MR.png" alt="Author One"></i>
+                        <i><img src="../images/MR.png" alt="Author One"></i>
                     </div>
                 </div>
             </div>
@@ -196,8 +196,8 @@
 <!-- ***** End Page Content **** -->
 
 <!-- Bootstrap core JavaScript -->
-<script src="docs/jquery/jquery.slim.min.js"></script>
-<script src="docs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="jquery/jquery.slim.min.js"></script>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
