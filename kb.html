@@ -33,7 +33,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Tools Adaptability</a>
+                    <a class="nav-link" href="ta.html">Tools Adaptability</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">GitFlow With GitHub</a>
@@ -53,26 +53,52 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12 text">
-            <h1 class="mt-5">Key Benefits</h1>
+            <h3 class="mt-5">Key Benefits</h3>
             <p class="lead"></p>
-            <p class="mt-"><strong>Parallel Development:</strong> One of the great things about GitFlow is that it makes parallel development very easy, by isolating new development from finished work. New development (such as features and non-emergency bug fixes) is done in feature branches, and is only merged back into main body of code when the developer(s) is happy that the code is ready for release. Although interruptions are a BadThing(tm), if you are asked to switch from one task to another, all you need to do is commit your changes and then create a new feature branch for your new task. When that task is done, just checkout your original feature branch and you can continue where you left off.</p>
-            <p class="mt-"><strong>Collaboration:</strong> Feature branches also make it easier for two or more developers to collaborate on the same feature, because each feature branch is a sandbox where the only changes are the changes necessary to get the new feature working. That makes it very easy to see and follow what each collaborator is doing.</p>
-            <p class="mt-"><strong>Release Staging Area:</strong> As new development is completed, it gets merged back into the develop branch, which is a staging area for all completed features that haven’t yet been released. So when the next release is branched off of develop, it will automatically contain all of the new stuff that has been finished.</p>
-            <p class="mt-"><strong>Support For Emergency Fixes:</strong> GitFlow supports hotfix branches - branches made from a tagged release. You can use these to make an emergency change, safe in the knowledge that the hotfix will only contain your emergency fix. There’s no risk that you’ll accidentally merge in new development at the same time.</p>
+            <p class="mt-"><strong>Parallel Development:</strong> One of the great things about GitFlow is that it makes
+                parallel development very easy, by isolating new development from finished work. New development (such
+                as features and non-emergency bug fixes) is done in feature branches, and is only merged back into main
+                body of code when the developer(s) is happy that the code is ready for release. Although interruptions
+                are a BadThing(tm), if you are asked to switch from one task to another, all you need to do is commit
+                your changes and then create a new feature branch for your new task. When that task is done, just
+                checkout your original feature branch and you can continue where you left off.</p>
+            <p class="mt-"><strong>Collaboration:</strong> Feature branches also make it easier for two or more
+                developers to collaborate on the same feature, because each feature branch is a sandbox where the only
+                changes are the changes necessary to get the new feature working. That makes it very easy to see and
+                follow what each collaborator is doing.</p>
+            <p class="mt-"><strong>Release Staging Area:</strong> As new development is completed, it gets merged back
+                into the develop branch, which is a staging area for all completed features that haven’t yet been
+                released. So when the next release is branched off of develop, it will automatically contain all of the
+                new stuff that has been finished.</p>
+            <p class="mt-"><strong>Support For Emergency Fixes:</strong> GitFlow supports hotfix branches - branches
+                made from a tagged release. You can use these to make an emergency change, safe in the knowledge that
+                the hotfix will only contain your emergency fix. There’s no risk that you’ll accidentally merge in new
+                development at the same time.</p>
             <h5 id="how-it-works">How It Works</h5>
-            <p>New development (new features, non-emergency bug fixes) are built in <strong>feature branches</strong>:</p>
+            <p>New development (new features, non-emergency bug fixes) are built in <strong>feature branches</strong>:
+            </p>
             <P><i><img src="images/kb1.png" alt=""></i></P>
-            <p>Feature branches are branched off of the <strong>develop branch</strong>, and finished features and fixes are merged back into the <strong>develop branch</strong> when they’re ready for release:</p>
+            <p>Feature branches are branched off of the <strong>develop branch</strong>, and finished features and fixes
+                are merged back into the <strong>develop branch</strong> when they’re ready for release:</p>
             <P><i><img src="images/kb2.png" alt=""></i></P>
-            <p>When it is time to make a release, a <strong>release branch</strong> is created off of <strong>develop</strong>:</p>
+            <p>When it is time to make a release, a <strong>release branch</strong> is created off of
+                <strong>develop</strong>:</p>
             <P><i><img src="images/kb3.png" alt=""></i></P>
-            <p>The code in the <strong>release branch</strong> is deployed onto a suitable test environment, tested, and any problems are fixed directly in the release branch.  This <strong>deploy -&gt; test -&gt; fix -&gt; redeploy -&gt; retest</strong> cycle continues until you’re happy that the release is good enough to release to customers.</p>
-            <p>When the release is finished, the <strong>release branch</strong> is merged into <strong>master</strong> <strong>and</strong> into <strong>develop</strong> too, to make sure that any changes made in the <strong>release branch</strong> aren’t accidentally lost by new development.</p>
+            <p>The code in the <strong>release branch</strong> is deployed onto a suitable test environment, tested, and
+                any problems are fixed directly in the release branch. This <strong>deploy -&gt; test -&gt; fix -&gt;
+                    redeploy -&gt; retest</strong> cycle continues until you’re happy that the release is good enough to
+                release to customers.</p>
+            <p>When the release is finished, the <strong>release branch</strong> is merged into <strong>master</strong>
+                <strong>and</strong> into <strong>develop</strong> too, to make sure that any changes made in the
+                <strong>release branch</strong> aren’t accidentally lost by new development.</p>
             <P><i><img src="images/kb4.png" alt=""></i></P>
-            <p>The <strong>master branch</strong> tracks released code only.  The only commits to <strong>master</strong> are merges from <strong>release branches</strong> and <strong>hotfix branches</strong>.</p>
+            <p>The <strong>master branch</strong> tracks released code only. The only commits to <strong>master</strong>
+                are merges from <strong>release branches</strong> and <strong>hotfix branches</strong>.</p>
             <p><strong>Hotfix branches</strong> are used to create emergency fixes:</p>
             <P><i><img src="images/kb5.png" alt=""></i></P>
-            <p>They are branched directly from a tagged release in the <strong>master branch</strong>, and when finished are merged back into both <strong>master</strong> and <strong>develop</strong> to make sure that the hotfix isn’t accidentally lost when the next regular release occurs.</p>
+            <p>They are branched directly from a tagged release in the <strong>master branch</strong>, and when finished
+                are merged back into both <strong>master</strong> and <strong>develop</strong> to make sure that the
+                hotfix isn’t accidentally lost when the next regular release occurs.</p>
 
             <ul class="list-unstyled">
                 <li></li>
@@ -80,7 +106,6 @@
         </div>
     </div>
 </div>
-
 
 
 <!-- ***** Footer Start ***** -->
@@ -106,9 +131,9 @@
                     <a href="https://www.linkedin.com/in/mizanr/" class="btn btn-success">My Linkedin Profile</a>
                 </div>
                 <div class="mt-5">
+                </div>
             </div>
         </div>
-    </div>
 </footer>
 <!-- ***** Footer Ends ***** -->
 <!-- ***** End Page Content **** -->
