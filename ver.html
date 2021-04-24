@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Versioning</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="docs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Versioning</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kb.html">Key Benefits</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gwg.html">GitFlow With GitHub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ver.html">Versioning</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ex.html">Examples</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- **** Page Content **** -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text">
+            <h3 class="mt-2" id="versioning">Versioning</h3>
+            <p class="lead"></p>
+            <h5 id="introduction">Introduction:</h5>
+            <p>One of the topics that the <a href="http://nvie.com/posts/a-successful-git-branching-model/">original
+                GitFlow article</a> doesn’t address at all is what scheme to adopt for your software’s version numbers.
+            </p>
+            <p>But we believe that life is easier for <strong>everyone</strong> if version numbers <strong>mean the same
+                thing</strong> to everyone who is working on a piece of software.</p>
+            <h5 id="semantic-versioning">Semantic Versioning:</h5>
+            <p><a href="http://semver.org">Semantic versioning</a> is a very simple scheme built around the <strong>X.Y.Z-buildNo</strong>
+                concept (for example <strong>2.6.0-2</strong> or <strong>2.6.0-SNAPSHOT20120501</strong>):</p>
+            <ul>
+                <li>Increment <strong>Z</strong> when you fix something</li>
+                <li>Increment <strong>Y</strong> when you add a new feature</li>
+                <li>Increment <strong>X</strong> when you break backwards-compatibility or add major features</li>
+                <li>Use the <strong>buildNo</strong> to differentiate different builds off the same branch, and to
+                    differentiate between development, test and production builds.
+                </li>
+            </ul>
+            <h5 id="version-numbers-and-gitflow-branches">Version Numbers And GitFlow Branches:</h5>
+            <p>Here’s what to build from which branch.</p>
+            <ul>
+                <li><strong>Feature branches</strong> and the <strong>develop branch</strong> should always build
+                    <strong>snapshot</strong> versions (e.g. 2.6.0-SNAPSHOT201205012).
+                </li>
+                <li><strong>Release branches</strong> and <strong>hotfix branches</strong> should always build <strong>release
+                    candidate</strong> versions (e.g. 2.6.0-0.rc1).
+                </li>
+                <li>The <strong>master branch</strong> should always build unqualified versions - versions without build
+                    numbers (e.g. 2.6.0).
+                </li>
+            </ul>
+            <p><span class="label label-important">Please remember:</span></p>
+            <ul>
+                <li>When you create a new branch, you need to <strong>manually update</strong> the software’s version
+                    number. The <strong>HubFlow tools</strong> cannot do this for you.
+                </li>
+                <li>If you’re using <strong>RPM</strong>, you need to put the <strong>buildNo</strong> part of the
+                    version number into the <strong>release</strong> tag in your spec file (or add a
+                    <strong>release</strong> tag to the <strong>configuration</strong> section if you’re using Maven’s
+                    RPM plugin).
+                </li>
+            </ul>
+            <h5 id="what-you-should-install-where">What You Should Install Where:</h5>
+            <p>As a rule of thumb: </p>
+            <ul>
+                <li><strong>Snapshot versions</strong> should only be installed on <strong>dev boxes</strong> and
+                    <strong>integration environments</strong>. They shouldn’t be deployed to any of the <strong>dedicated
+                        test environments</strong>.
+                </li>
+                <li><strong>Release candidates</strong> should be installed in the <strong>dedicated test
+                    environments</strong>. In an emergency, a release candidate can be installed into the <strong>production
+                    environment</strong>.
+                </li>
+                <li><strong>Production releases</strong> can be installed anywhere - and they are the only kind of build
+                    that should be installed into the <strong>production environment</strong>.
+                </li>
+            </ul>
+
+
+            <ul class="list-unstyled">
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- ***** Footer Start ***** -->
+<footer id="contact-us">
+    <div class="container mt-5">
+        <div class="footer-content">
+            <div class="row">
+                <div class="right-content col-lg-10 col-md-12 col-sm-12">
+                    <h5><em>More About: Git Hub</em></h5>
+                    <p>For all other inquiries, please view my LinkedIn Page or contact us by below number:
+                        <br> +1 609 481-7907 (US/Intl)<br></p>
+                    <div class="author">
+                        <i><img src="images/MR.png" alt="Author One"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 mt-4">
+                <div class="sub-footer">
+                    <p>Copyright &copy; 2021 Git: Collaboration Page
+                        | Designed by: Mizan Rahman </p>
+                    <a href="https://www.linkedin.com/in/mizanr/" class="btn btn-success">My Linkedin Profile</a>
+                </div>
+                <div class="mt-5">
+                </div>
+            </div>
+        </div>
+</footer>
+<!-- ***** Footer Ends ***** -->
+<!-- ***** End Page Content **** -->
+
+<!-- Bootstrap core JavaScript -->
+<script src="docs/jquery/jquery.slim.min.js"></script>
+<script src="docs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
